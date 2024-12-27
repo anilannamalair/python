@@ -1,0 +1,15 @@
+1. Number of Stages -- Count of word 'Stage' from Jenkinsfile
+2. Number of Parallel Execution -- Count parallel execeution blocks from Jenkinsfile
+3. Triggers -- Count of Triggers in the 'Triggers' section of Jenkinsfile
+4. Number of Environments/Deployments -- Get the count of stage which has 'deploy' word in it in the Jenkinsfile
+5. Testing and Code Quality Checks -- TOOLS_LIST in jenkinsfile
+6. External Integrations -- Get first word of each line in the 'tools' section in Jenkinsfile
+7. Pipeline Script Complexity (Declarative vs. Scripted) -- if 'pipeline {' present in Jenkinsfile then it is 'Declarative Pipeline' or else if 'node {' is present in Jenkinsfile then it is 'Scripted Pipeline'.
+8. Artifact Management -- Checks if the strings 'artifactory_server' and 'artifactory_cred' are present in the environment section of Jenkinsfile, If present then mark as "Yes" or else "No".
+9. Error Handling and Retry Logic -- Count number of try blocks and retry blocks from Jenkinsfile
+10. Security and Compliance Checks -- SECURITY_TOOLS_LIST in jenkinsfile
+11. Approval Gates -- Count the number of Approval stages found in the Jenkinsfile
+12. Cloud Infrastructure and Containerization -- CONTAINERIZATION_LIST in jenkinsfile
+13. Repository -- from VERSIONING_TOOLS_DICT search with key in jenkisfile and if found return value
+
+Configuration parameters / values -- Extract variable from all files which starts from '${' and excluding the ones which contains $@ in it.
