@@ -1,0 +1,5 @@
+If line that starts with 'library' followed by a string in double quotes is present in Jenkinsfile -- "Complex".
+If the string 'node {' is present, or if the words sh or bat are present --  “Medium”.
+If the string 'pipeline {' is present and neither sh nor bat are present, -- “Simple”.
+If none of the above conditions are met, -- “Unknown”.
+
